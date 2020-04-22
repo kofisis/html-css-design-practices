@@ -1,52 +1,188 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Welcome to the ArtShop</title>
-    </head>
 
-    <body>
+<head>
+    <title>Welcome to the ArtShop</title>
+    <link rel = "stylesheet"
+    type = "text/css"
+    href = "artWork.css"/>
+</head>
+
+<body>
+    <!------Jumbotron with Navigation Bar-->
     <div id="jombotron">
-        <div id="navigation">
-            <ul>
-                <li class="logo-navigation">Artwork</li>
-                <li>Home</li>
-                <li>About</li>
-                <li>Services</li>
-                <li>FAQ</li>
-                <li class="nav-drop-down">Drop Down</li>
-                <li>Contact Us</li>
-            </ul>
+        <div class="navbar">
+            <a href="#mainpage" class="navbar-logo">ArtShop</a>
+            <a href="#home">Home</a>
+            <a href="about">About</a>
+            <a href="service">Service</a>
+            <a href="faq">FAQ</a>
+          <div class="dropdown">
+              <button class="btn">Dropdown<i class="fa fa-caret-down"></i> 
+              </button>
+              <div class="drpdwn-items">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+              </div>
+              <a href="#contact-form">Contact Us</a>
+          </div> 
         </div>
-         <div id="jumbotron-heading"> 
-            <p>Art Factory is free for <em>You</em></p>
-         </div>
-         <div class="jumbo-text">
-            <p>This template is available for 100% free of charge on TemplateMo. Download, modify and use this for your business website.</p>
-         </div>
-         <div class="jumbo-img">
-            <img src="xxxxxx" alt="slider_icon">
-         </div>
-         <div id="jumbo-btn">
+        <div class="jumbtrn-slide-right">
+            <img src="https://templatemo.com/templates/templatemo_537_art_factory/assets/images/slider-icon.png" alt="slide.icon">
+        </div>
+        <div class="jumbtrn">
+            <h5 class="jumbtrn-heading">Art Factory is free for <em class="jumbtrn-head-emphasis">You</em></h5>
+            <p class="jmbtrn-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis lorem quis volutpat auctor. Praesent aliquet eros at dui bibendum vehicula. </p>
+        </div>
+        <div id="jumbo-btn">
             <button>Find Out More</button>
-         </div>
+        </div>
     </div>
 
-        
-         
-    </body>
+    <!--Second column-->
+    <div id="second-column">
+        <div class="left-image">
+            <img src="https://templatemo.com/templates/templatemo_537_art_factory/assets/images/left-image.png" alt="left-image">
+        </div>
+        <div class="second-column-text">
+            <h5 class="column-header">Proin egestas nisi magna, ac dignissim diam dapibus eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac eros erat</h5>
+            <p class="scnd-column-text">Duis vel laoreet ex. Maecenas varius ornare ex non luctus. Nullam sagittis vitae leo et lacinia. Fusce scelerisque ex in gravida commodo. Nulla id euismod diam. Cras turpis libero, tincidunt nec velit in, vulputate maximus neque. Sed sit amet lorem lectus. Nam luctus massa ac nisi tempor, vel consequat nisi volutpat. Fusce eu tristique sem, et elementum tellus. Proin eu nibh ultrices est interdum rhoncus. Nam ac placerat arcu, fermentum rhoncus leo.</p>
+            <button class="scnd-column-btn">
+                Discover More
+            </button>
+        </div>
+        <hr class="second-column-divided">
+    </div>
+
+    <!--Third column-->
+<div id="third-column">
+    <div class="third-column-text">
+        <h5 class="column-header"> Curabitur aliquam eget tellus id porta</h5>
+        <p class="third-column-heading-text"Proin justo sapien, posuere suscipit tortor in, fermentum mattis elit. Aenean in feugiat purus.></p>
+    <div class="third-bulltin">
+                <h5><ion-icon name="search-sharp" class="bltn-logo"></ion-icon>Nulla ultricies risus quis risus</h5>
+                <p class="bltn-text">Praesent auctor eleifend lacus, et venenatis justo aliquet at. Nunc vestibulum eros ut aliquet molestie. Morbi pharetra diam non dignissim pellentesque. Donec gravida aliquam odio, vitae laoreet lorem egestas sed. Nunc lacus dolor, pulvinar sit amet interdum sed, suscipit sit amet est. Sed id blandit turpis. Nam in sollicitudin urna.</p>
+                <h5><ion-icon name="map-sharp" class="bltn-logo"></ion-icon>Nulla ultricies risus quis risus</h5>
+                <p class="bltn-text">Praesent auctor eleifend lacus, et venenatis justo aliquet at. Nunc vestibulum eros ut aliquet molestie. Morbi pharetra diam non dignissim pellentesque. Donec gravida aliquam odio, vitae laoreet lorem egestas sed. Nunc lacus dolor, pulvinar sit amet interdum sed, suscipit sit amet est. Sed id blandit turpis. Nam in sollicitudin urna.</p>
+                <h5><ion-icon name="radio-sharp" class="bltn-logo"></ion-icon>Nulla ultricies risus quis risus</h5>
+                <p class="bltn-text">Praesent auctor eleifend lacus, et venenatis justo aliquet at. Nunc vestibulum eros ut aliquet molestie. Morbi pharetra diam non dignissim pellentesque. Donec gravida aliquam odio, vitae laoreet lorem egestas sed. Nunc lacus dolor, pulvinar sit amet interdum sed, suscipit sit amet est. Sed id blandit turpis. Nam in sollicitudin urna.</p>
+    </div>
+    <div class="third-img">
+        <img src="https://templatemo.com/templates/templatemo_537_art_factory/assets/images/right-image.png" alt="right-image">
+
+    </div>
+   </div>
+</div>
+
+<!--sliders-->
+<div id="sliders-page">
+    <div class="sliders-direction-btn">
+        <button class="left-btn"><ion-icon class="sliders-btn-logo" name="arrow-back-circle-sharp"></ion-icon> </button>
+        <button class="right-btn"><ion-icon class="sliders-btn-logo" name="arrow-forward-circle-sharp"></ion-icon></button>
+    </div>
+    <div class="sliders-boxes">
+        <div class="slider-box">
+                <ion-icon name="search-sharp" class="slider-icon"></ion-icon>
+                <h5 class="slider-heading">First Slider</h5>
+                <p class="slider-text">Jerky kevin t-bone, corned beef shoulder meatloaf tongue pork loin</p>
+                <button class="slider-btn">Read More</button>
+
+        </div>
+        <div class="slider-box">
+            <ion-icon name="search-sharp" class="slider-icon"></ion-icon>
+            <h5 class="slider-heading">Second Slider</h5>
+            <p class="slider-text">Jerky kevin t-bone, corned beef shoulder meatloaf tongue pork loin</p>
+            <button class="slider-btn">Read More</button>
+        </div>
+        <div class="slider-box">
+            <ion-icon name="search-sharp" class="slider-icon"></ion-icon>
+            <h5 class="slider-heading">Third Slider</h5>
+            <p class="slider-text">Jerky kevin t-bone, corned beef shoulder meatloaf tongue pork loin</p>
+            <button class="slider-btn">Read More</button>
+        </div>
+        <div class="slider-box">
+            <ion-icon name="search-sharp" class="slider-icon"></ion-icon>
+            <h5 class="slider-heading">Fourth Slider</h5>
+            <p class="slider-text">Jerky kevin t-bone, corned beef shoulder meatloaf tongue pork loin</p>
+            <button class="slider-btn">Read More</button>
+        </div>
+
+    </div>
+
+</div>
+
+    <!--FAQ Page-->
+    <div id="faq-page">
+        <div id="faq-content">
+            <h3>Frequently Asked Questions</h3>
+            <p>Short ribs leberkas cow rump flank pork loin, turducken biltong chuck andouille shank brisket doner filet mignon landjaeger. Cow turkey hamburger sirloin pork chop burgdoggen boudin meatloaf turducken kielbasa biltong. </p>
+    
+        <section class="right-section">
+            <h5 class="faq-question">First Question<ion-icon name="arrow-forward-sharp" class="faq-direction-icon"></ion-icon></h5>
+            <p class="faq-answer">Filet mignon bacon drumstick, doner cupim porchetta shoulder capicola alcatra leberkas landjaeger andouille prosciutto kevin swine. Leberkas pork chop pastrami sausage, bresaola flank ground round shank</p>
+            <h5 class="faq-question">Second Question<ion-icon name="arrow-forward-sharp" class="faq-direction-icon"></ion-icon></h5>
+            <p class="faq-answer">Filet mignon bacon drumstick, doner cupim porchetta shoulder capicola alcatra leberkas landjaeger andouille prosciutto kevin swine. Leberkas pork chop pastrami sausage, bresaola flank ground round shank</p>
+            <h5 class="faq-question">Third Question<ion-icon name="arrow-forward-sharp" class="faq-direction-icon"></ion-icon></h5>
+            <p class="faq-answer">Filet mignon bacon drumstick, doner cupim porchetta shoulder capicola alcatra leberkas landjaeger andouille prosciutto kevin swine. Leberkas pork chop pastrami sausage, bresaola flank ground round shank</p>
+            <h5 class="faq-question">Fourth Question<ion-icon name="arrow-forward-sharp" class="faq-direction-icon"></ion-icon></h5>
+            <p class="faq-answer">Filet mignon bacon drumstick, doner cupim porchetta shoulder capicola alcatra leberkas landjaeger andouille prosciutto kevin swine. Leberkas pork chop pastrami sausage, bresaola flank ground round shank</p>
+            <h5 class="faq-question">Fifth Question<ion-icon name="arrow-forward-sharp" class="faq-direction-icon"></ion-icon></h5>
+            <p class="faq-answer">Filet mignon bacon drumstick, doner cupim porchetta shoulder capicola alcatra leberkas landjaeger andouille prosciutto kevin swine. Leberkas pork chop pastrami sausage, bresaola flank ground round shank</p>
+            <h5 class="faq-question">Sixth Question<ion-icon name="arrow-forward-sharp" class="faq-direction-icon"></ion-icon></h5>
+            <p class="faq-answer">Filet mignon bacon drumstick, doner cupim porchetta shoulder capicola alcatra leberkas landjaeger andouille prosciutto kevin swine. Leberkas pork chop pastrami sausage, bresaola flank ground round shank</p>
+
+        </section>
+        <section class="left-section">
+            <h5 class="column-header">
+                Class aptent taciti sociosqu ad litora torquent per conubia 
+            </h5>
+            <p class="page-text">Curabitur placerat diam in risus lobortis, laoreet porttitor est elementum. Nulla ultricies risus quis risus scelerisque, a aliquam tellus maximus. Cras pretium nulla ac convallis iaculis. Aenean bibendum erat vitae odio sodales, in facilisis tellus volutpat.</p>
+            <p class="page-text">Sed lobortis pellentesque magna ac congue. Suspendisse quis molestie magna, id eleifend ex. Ut mollis ultricies diam nec dictum. Morbi commodo hendrerit mi vel vulputate. Proin non tincidunt dui. Lorem ipsum dolor sit amet.</p>
+
+            </p>Email <em class="text-link">kofisis@yahoo.com</em></p>
+            <button class="txt-btn">
+                Contact Us
+            </button>
+        </section>
+        </div>
+
+    </div>
+    
+    <!--Map(left) & Contact Form(right)-->
+    <div id="map-contact-form">
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2394.4644687052805!2d23.1521319!3d53.1198074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ffbfedb7ca63f%3A0xb28451cf9c8685!2sDom%20Studenta%20Beta!5e0!3m2!1sen!2spl!4v1587549139309!5m2!1sen!2spl" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div class="contact-form">
+            <form id="form-controller">
+                <input type="text" placeholder="Full Name" required><input type="email" placeholder="Email" required><br>
+                <textarea rows="10" cols="30" placeholder="Write Your Message" required> </textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+    </div>
+
+    <!--Ending Page with copywrite and social media buttons-->
+  <div id="ending-page">
+      <div class="left-text">
+          <p>Build with love by <a href="github.com/kofisis" >erkekofi"</a></p>
+      </div>
+      <div class="social-media-icons">
+          <a href="#" class="sm-icons"><ion-icon name="logo-facebook"></ion-icon></a>
+          <a href="#" class="sm-icons"><ion-icon name="logo-twitter"></ion-icon></a>
+          <a href="#" class="sm-icons"><ion-icon name="logo-linkedin"></ion-icon></a>
+          <a href="#" class="sm-icons"><ion-icon name="logo-rss"></ion-icon></a>
+          <a href="#" class="sm-icons"><ion-icon name="logo-github"></ion-icon></a>
+
+      </div>
+
+  </div>
+
+
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+</body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
