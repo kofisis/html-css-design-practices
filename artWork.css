@@ -1,4 +1,79 @@
 * { 
     border: 1px solid black;
     
-  }
+    .nav-bar-text{
+      float:right;
+      padding-top:15px;
+    }
+    .nav-text{
+      text-decoration : none;
+      margin-right:20px;
+      font-family: 'Comic Neue', cursive;
+      font-size:15px;
+      color:blue;
+      display: inline-block;
+    }
+    .navbar-logo{
+      text-decoration: none;
+      padding:50px 20px 50px 20px;
+      font-family: 'Comic Neue', cursive;
+      font-size:50px;
+    }
+    #jombotron{
+      padding-top:20px;
+      padding-right:20px;
+      padding-left:20px;
+    }
+    
+    .btn{
+        background-color: Transparent;
+        background-repeat:no-repeat;
+        border: none;
+        cursor:pointer;
+        overflow: hidden;
+        outline:none;
+    }
+    
+    .dropdown{
+      position: relative;
+      display: inline-block;
+    }
+    
+    /* Dropdown Content (Hidden by Default) */
+    
+    .drpdwn-items{
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    /* Links inside the dropdown */
+    .drpdwn-items a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    /* Change color of dropdown links on hover */
+    
+    .drpdwn-items a:hover{
+      padding-left:10px;
+      color:brown;
+      text-decoration:underline;
+    }
+    
+    /* Show the dropdown menu on hover */
+    
+    .dropdown:hover .drpdwn-items{
+      display: block;
+    
+    }
+    
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    .dropdown:hover .btn{
+      color: orange;
+    }
